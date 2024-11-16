@@ -25,335 +25,230 @@
         href='https://polygon.technology/wp-content/uploads/oxygen/css/polygon-footer-624fdb.html?cache=1626256259&amp;ver=5.8'
         type='text/css' media='all' />
     <style type="text/css">
-        body {
-            background-color: rgb(137, 59, 59);
-            color: #000;
-            font-size: 16px;
-            line-height: 21px;
-            font-weight: 400;
-            font-family: manrope;
-            /* overflow: hidden; */
-        }
+                body {
+                        background-color: rgb(137, 59, 59);
+                        color: #000;
+                        font-size: 16px;
+                        line-height: 21px;
+                        font-weight: 400;
+                        font-family: manrope
+                }
 
-        #splashScreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #ffffff;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999; /* Ensure the splash screen is on top of everything */
-            opacity: 1; /* Start fully visible */
-            transition: opacity 0.5s ease-out; /* Smooth fade-out */
-        }
+                .headline {
+                        font-size: 15pt;
+                        font-weight: bolder;
+                        color: #f0b90b
+                }
 
-        #splashScreen img {
-            width: 200px;
-        }
+                .smaller {
+                        font-size: 8pt
+                }
 
-        #splashScreen h1 {
-            font-size: 24pt;
-            color: #F46725;
-            margin-top: 20px;
-        }
+                .dataItem {
+                        color: #ea690b;
+                        font-weight: bold
+                }
 
-        #splashScreen p {
-            font-size: 14pt;
-            color: #000000;
-            margin-top: 10px;
-        }
+                .reveal {
+                        border-radius: 20px !important;
+                        top: 50px;
+                        position: relative;
+                        font-size: 12pt
+                }
 
-        #loadingBarContainer {
-            width: 80%;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
+                h1 {
+                        font-size: 24pt;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                        color: black
+                }
 
-        #loadingBar {
-            height: 10px;
-            width: 0;
-            background-color: #F46725;
-        }
+                h2 {
+                        font-size: 20pt;
+                        font-weight: bolder;
+                        color: black
+                }
 
-        @keyframes loading {
-            0% { width: 0%; }
-            100% { width: 100%; }
-        }
+                h3 {
+                        font-size: 16pt;
+                        font-weight: bolder;
+                        color: black
+                }
 
-        #loadingBar.animate {
-            animation: loading 3s linear forwards;
-        }
+                h4 {
+                        font-size: 12pt;
+                        color: blueviolet
+                }
 
-        #mainContent {
-            display: none;
-            opacity: 0; /* Start hidden and invisible */
-            transition: opacity 0.5s ease-in; /* Smooth fade-in */
-        }
+                h5 {
+                        font-size: 12pt;
+                        color: blueviolet;
+                        text-transform: uppercase;
+                        font-weight: bolder
+                }
 
-        .headline {
-            font-size: 15pt;
-            font-weight: bolder;
-            color: #f0b90b
-        }
+                .hIcon {
+                        position: relative;
+                        top: -2px
+                }
 
-        .smaller {
-            font-size: 8pt
-        }
+                button {
+                        font-family: 'Padauk', sans-serif;
+                        border-radius: 10px !important
+                }
 
-        .dataItem {
-            color: #ea690b;
-            font-weight: bold
-        }
+                table {
+                        width: 40%
+                }
 
-        .reveal {
-            border-radius: 20px !important;
-            top: 50px;
-            position: relative;
-            font-size: 12pt
-        }
+                table thead {
+                        color: #555 !important;
+                        font-size: 12pt
+                }
 
-        h1 {
-            font-size: 24pt;
-            font-weight: bolder;
-            text-transform: uppercase;
-            color: rgb(255, 255, 255)
-        }
+                table tr {
+                        background-color: rgba(0, 0, 0, 0.9) !important;
+                        text-align: center;
+                        font-weight: bold
+                }
 
-        h2 {
-            font-size: 20pt;
-            font-weight: bolder;
-            color: rgb(255, 255, 255)
-        }
+                .MATICIcon {
+                        width: 20px;
+                        height: 20px;
+                        margin: 5px;
+                        top: -2px;
+                        position: relative
+                }
 
-        h3 {
-            font-size: 16pt;
-            font-weight: bolder;
-            color: rgb(255, 255, 255)
-        }
+                .orange {
+                        color: #F9C80E
+                }
 
-        h4 {
-            font-size: 12pt;
-            color: #e2b52a
-        }
+                .red {
+                        color: #ea3546
+                }
 
-        h5 {
-            font-size: 12pt;
-            color: #e2b52a;
-            text-transform: uppercase;
-            font-weight: bolder
-        }
+                .infoPanel {
+                        line-height: 16pt;
+                        margin-bottom: 10px;
+                        padding: 15px;
+                        border-radius: 15px;
+                        background-color: rgb(206, 187, 187);
+                        box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px, rgba(25, 19, 38, 0.05) 0px 1px 1px;
+                        border-bottom: 5px solid rgba(59, 18, 18, 0.765)
+                }
 
-        .hIcon {
-            position: relative;
-            top: -2px
-        }
+                .matrixHolder {
+                        background-color: rgba(100, 100, 100, 0.2);
+                        padding: 5px;
+                        border-radius: 20px;
+                        border: 1px solid;
+                        border-color: #999;
+                        margin: 10px
+                }
 
-        button {
-            font-family: 'Padauk', sans-serif;
-            border-radius: 10px !important
-        }
+                .matrixPanel {
+                        background-color: rgb(217, 213, 206);
+                        padding: 5px;
+                        padding-right: 15px;
+                        border-color: #999 !important;
+                        border: 2px solid;
+                        line-height: 12pt;
+                        margin-bottom: 10px;
+                        border-radius: 40px
+                }
 
-        table {
-            width: 40%
-        }
+                .matrixReferrerLevel {
+                        border-radius: 40px;
+                        border: solid 4px #aaa;
+                        width: 40px;
+                        height: 40px;
+                        padding-top: 10px;
+                        font-size: 10px;
+                        font-weight: bold;
+                        cursor: help
+                }
 
-        table thead {
-            color: #555 !important;
-            font-size: 12pt
-        }
+                .matrixTopLevel {
+                        border-radius: 40px;
+                        border: solid 4px #f86624;
+                        width: 40px;
+                        height: 40px;
+                        padding-top: 10px;
+                        font-size: 10px;
+                        font-weight: bold
+                }
 
-        table tr {
-            background-color: rgba(0, 0, 0, 0.9) !important;
-            text-align: center;
-            font-weight: bold
-        }
+                .matrixLowerLevel {
+                        border-radius: 40px;
+                        border: solid 4px #ea3546;
+                        width: 40px;
+                        height: 40px;
+                        padding-top: 10px;
+                        font-size: 10px;
+                        font-weight: bold;
+                        cursor: help
+                }
 
-        .maticIcon {
-            width: 20px;
-            height: 20px;
-            margin: 5px;
-            top: -2px;
-            position: relative
-        }
+                .matrixLowerLevelNonPay {
+                        border-radius: 40px;
+                        border: solid 4px #1a4e78;
+                        width: 40px;
+                        height: 40px;
+                        padding-top: 10px;
+                        font-size: 10px;
+                        font-weight: bold;
+                        cursor: help
+                }
 
-        .orange {
-            color: #F9C80E
-        }
+                html,
+                body {
+                        heigth: 100%;
+                        width: 100%;
+                        overflow: none
+                }
 
-        .red {
-            color: #fb949e
-        }
+                .comment {
+                        font-size: 10pt;
+                        color: #aaa;
+                        width: 40%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        padding: 5px;
+                        border-color: white;
+                        border: 2px solid
+                }
 
-        .infoPanel {
-            line-height: 16pt;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 15px;
-            background-color: rgb(206, 187, 187);
-            box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px, rgba(25, 19, 38, 0.05) 0px 1px 1px;
-            border-bottom: 5px solid #F46725
-        }
+                .top-bar {
+                        width: 100%;
+                        position: fixed;
+                        top: 0px
+                }
 
-        .matrixHolder {
-            background-color: rgba(100, 100, 100, 0.2);
-            padding: 5px;
-            border-radius: 20px;
-            border: 1px solid;
-            border-color: #999;
-            margin: 10px
-        }
+                #canvas {
+                        z-index: -1;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        position: fixed
+                }
 
-        .matrixPanel {
-            background-color: rgb(217, 213, 206);
-            padding: 5px;
-            padding-right: 15px;
-            border-color: #999 !important;
-            border: 1px solid;
-            line-height: 12pt;
-            margin-bottom: 10px;
-            border-radius: 40px
-        }
+                .footer {
+                        font-size: 10pt;
+                        color: #aaa;
+                        width: 100%;
+                        line-height: 8pt
+                }
 
-        .matrixReferrerLevel {
-            border-radius: 40px;
-            border: solid 4px #aaa;
-            width: 40px;
-            height: 40px;
-            padding-top: 10px;
-            font-size: 10px;
-            font-weight: bold;
-            cursor: help
-        }
-
-        .matrixTopLevel {
-            border-radius: 40px;
-            border: solid 4px #f86624;
-            width: 40px;
-            height: 40px;
-            padding-top: 10px;
-            font-size: 10px;
-            font-weight: bold
-        }
-
-        .matrixLowerLevel {
-            border-radius: 40px;
-            border: solid 4px #ea3546;
-            width: 40px;
-            height: 40px;
-            padding-top: 10px;
-            font-size: 10px;
-            font-weight: bold;
-            cursor: help
-        }
-
-        .matrixLowerLevelNonPay {
-            border-radius: 40px;
-            border: solid 4px #1a4e78;
-            width: 40px;
-            height: 40px;
-            padding-top: 10px;
-            font-size: 10px;
-            font-weight: bold;
-            cursor: help
-        }
-
-        html,
-        body {
-            heigth: 100%;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        .comment {
-            font-size: 10pt;
-            color: #aaa;
-            width: 40%;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 5px;
-            border-color: white;
-            border: 2px solid
-        }
-
-        .top-bar {
-            width: 100%;
-            position: fixed;
-            top: 0px
-        }
-
-        #canvas {
-            z-index: -1;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            position: fixed
-        }
-
-        .faq {
-            /* background: url('./gif/waves.gif') center center / cover no-repeat; */
-            overflow: hidden;
-            /* Rotate the background image by 90 degrees */
-            /* background-size: 130% 100%;  */
-        }
-
-
-        .footer {
-            position: relative;
-            font-size: 10pt;
-            color: #aaa;
-            width: 100%;
-            line-height: 8pt;
-            overflow: hidden;
-
-        }
-
-
-
-        /* .footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('./gif/giphy2.gif') center center / cover no-repeat;
-    opacity: 0.8; 
-} */
-
-        body {
-            font-family: 'Dominik';
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Dominik';
-        }
-
-        p {
-            font-family: 'Dominik';
-        }
-
-        div {
-            font-family: 'Dominik', sans-serif;
-        }
-
-        button {
-            font-family: 'Dominik', sans-serif;
-
-        }
-
-
-        // Share URL Component .shareUrl{width:50%;padding:40px 20px;text-align:center}.shareUrl-header{margin-bottom:40px}.shareUrl-headerText{margin-top:0;margin-bottom:10px;font-size:22px}.shareUrl-subtext{margin-top:0px;top:-5px;position:relative;font-size:14px}.shareUrl-body{margin-bottom:70px}.shareUrl-input{width:50% !important;padding:10px 0;border:2px solid rgba(255, 255, 255, 0.59);text-align:center;font-size:26px;font-weight:bold;color:rgb(255, 255, 255);background-color:rgb(0,0,0);border-radius:3px;transition:all 300ms ease;&:hover,&:focus,&:active{border-color:rgba(0,0,0,0.3);background-color:rgba(0,0,0,0.5)}}input,textarea{background-color:rgb(0,0,0) !important;color:white !important;width:70% !important}input:read-only{background-color:rgb(0,0,0)}input:-moz-read-only{background-color:rgb(0,0,0)}.shareUrl-input:focus{background-color:rgb(0,0,0)}// Only necessary change from a UX perspective .shareUrl-input{cursor:pointer}@media (max-width: 1024px){table{width:80%;font-size:16pt}}@media (pointer:coarse){table{width:80%;font-size:18pt}.shareUrl{width:80%}.shareUrl-input{width:80% !important;font-size:12pt}}.loadingSpinner{position:fixed;top:200px;left:45%;background-image:url(images/loading2.gif);width:256px;height:256px;transform:scale(0.8);z-index:2015;font-size:20pt;background-color:rgba(0,0,0,0.5);border-radius:10px;border-color:white;border:1px solid;color:#ffd201}.connectBtn{background-color:#f27235;border:1px solid #f27235;color:white;font-weight:400;border-radius:0px !important}
+                // Share URL Component .shareUrl{width:50%;padding:40px 20px;text-align:center}.shareUrl-header{margin-bottom:40px}.shareUrl-headerText{margin-top:0;margin-bottom:10px;font-size:22px}.shareUrl-subtext{margin-top:0px;top:-5px;position:relative;font-size:14px}.shareUrl-body{margin-bottom:70px}.shareUrl-input{width:50% !important;padding:10px 0;border:2px solid rgba(255, 255, 255, 0.59);text-align:center;font-size:26px;font-weight:bold;color:rgba(255, 255, 255, 0.9);background-color:rgb(0,0,0);border-radius:3px;transition:all 300ms ease;&:hover,&:focus,&:active{border-color:rgba(0,0,0,0.3);background-color:rgba(0,0,0,0.5)}}input,textarea{background-color:rgb(0,0,0) !important;color:white !important;width:70% !important}input:read-only{background-color:rgb(0,0,0)}input:-moz-read-only{background-color:rgb(0,0,0)}.shareUrl-input:focus{background-color:rgb(0,0,0)}// Only necessary change from a UX perspective .shareUrl-input{cursor:pointer}@media (max-width: 1024px){table{width:80%;font-size:16pt}}@media (pointer:coarse){table{width:80%;font-size:18pt}.shareUrl{width:80%}.shareUrl-input{width:80% !important;font-size:12pt}}.loadingSpinner{position:fixed;top:200px;left:45%;background-image:url(images/loading2.gif);width:256px;height:256px;transform:scale(0.8);z-index:2015;font-size:20pt;background-color:rgba(0,0,0,0.5);border-radius:10px;border-color:white;border:1px solid;color:#ffd201}.connectBtn{background-color:#8248e5;border:1px solid #8248e5;color:white;font-weight:400;border-radius:0px !important}
+                .container { max-width: 1200px; margin: auto; padding: 20px; }
+        .sidebar { float: left; width: 25%; padding: 20px; background: #f4f4f4; }
+        .content { float: right; width: 70%; padding: 20px; }
+        .faq { margin-bottom: 10px; }
+        .faq h3 { cursor: pointer; padding: 10px; background: #007BFF; color: white; margin: 0; }
+        .faq-content { display: none; padding: 10px; background: #e7e7e7; }
+        .search-bar { margin-bottom: 20px; }
+        .clear { clear: both; }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTYYJ4E8K5"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QTYYJ4E8K5');</script>
