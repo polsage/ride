@@ -240,7 +240,7 @@
                         line-height: 8pt
                 }
 
-                // Share URL Component .shareUrl{width:50%;padding:40px 20px;text-align:center}.shareUrl-header{margin-bottom:40px}.shareUrl-headerText{margin-top:0;margin-bottom:10px;font-size:22px}.shareUrl-subtext{margin-top:0px;top:-5px;position:relative;font-size:14px}.shareUrl-body{margin-bottom:70px}.shareUrl-input{width:50% !important;padding:10px 0;border:2px solid rgba(255, 255, 255, 0.59);text-align:center;font-size:26px;font-weight:bold;color:rgba(255, 255, 255, 0.9);background-color:rgb(0,0,0);border-radius:3px;transition:all 300ms ease;&:hover,&:focus,&:active{border-color:rgba(0,0,0,0.3);background-color:rgba(0,0,0,0.5)}}input,textarea{background-color:rgb(0,0,0) !important;color:white !important;width:70% !important}input:read-only{background-color:rgb(0,0,0)}input:-moz-read-only{background-color:rgb(0,0,0)}.shareUrl-input:focus{background-color:rgb(0,0,0)}// Only necessary change from a UX perspective .shareUrl-input{cursor:pointer}@media (max-width: 1024px){table{width:80%;font-size:16pt}}@media (pointer:coarse){table{width:80%;font-size:18pt}.shareUrl{width:80%}.shareUrl-input{width:80% !important;font-size:12pt}}.loadingSpinner{position:fixed;top:200px;left:45%;background-image:url(images/loading2.gif);width:256px;height:256px;transform:scale(0.8);z-index:2015;font-size:20pt;background-color:rgba(0,0,0,0.5);border-radius:10px;border-color:white;border:1px solid;color:#ffd201}.connectBtn{background-color:#8248e5;border:1px solid #8248e5;color:white;font-weight:400;border-radius:0px !important}
+                // Share URL Component .shareUrl{width:50%;padding:40px 20px;text-align:center}.shareUrl-header{margin-bottom:40px}.shareUrl-headerText{margin-top:0;margin-bottom:10px;font-size:22px}.shareUrl-subtext{margin-top:0px;top:-5px;position:relative;font-size:14px}.shareUrl-body{margin-bottom:70px}.shareUrl-input{width:50% !important;padding:10px 0;border:2px solid rgba(200, 176, 176, 0.59);text-align:center;font-size:26px;font-weight:bold;color:rgba(200, 176, 176, 0.9);background-color:rgb(0,0,0);border-radius:3px;transition:all 300ms ease;&:hover,&:focus,&:active{border-color:rgba(0,0,0,0.3);background-color:rgba(0,0,0,0.5)}}input,textarea{background-color:rgb(0,0,0) !important;color:white !important;width:70% !important}input:read-only{background-color:rgb(0,0,0)}input:-moz-read-only{background-color:rgb(0,0,0)}.shareUrl-input:focus{background-color:rgb(0,0,0)}// Only necessary change from a UX perspective .shareUrl-input{cursor:pointer}@media (max-width: 1024px){table{width:80%;font-size:16pt}}@media (pointer:coarse){table{width:80%;font-size:18pt}.shareUrl{width:80%}.shareUrl-input{width:80% !important;font-size:12pt}}.loadingSpinner{position:fixed;top:200px;left:45%;background-image:url(images/loading2.gif);width:256px;height:256px;transform:scale(0.8);z-index:2015;font-size:20pt;background-color:rgba(0,0,0,0.5);border-radius:10px;border-color:white;border:1px solid;color:#ffd201}.connectBtn{background-color:#8248e5;border:1px solid #8248e5;color:white;font-weight:400;border-radius:0px !important}
                 .container { max-width: 1200px; margin: auto; padding: 20px; }
         .sidebar { float: left; width: 25%; padding: 20px; background: #f4f4f4; }
         .content { float: right; width: 70%; padding: 20px; }
@@ -252,38 +252,12 @@
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTYYJ4E8K5"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-QTYYJ4E8K5');</script>
-    <script>
-        window.addEventListener('load', function () {
-            // Set a delay to match the loading animation duration
-            setTimeout(function () {
-                // Fade out the splash screen
-                document.getElementById('splashScreen').style.opacity = '0';
-                
-                // After the fade-out transition is complete (500ms), hide splash screen completely
-                setTimeout(function () {
-                    document.getElementById('splashScreen').style.display = 'none';
-                    // Show the main content
-                    document.getElementById('mainContent').style.display = 'block';
-                    document.getElementById('mainContent').style.opacity = '1'; // Fade-in effect
-                }, 500); // Matching the transition duration of opacity fade-out (0.5 seconds)
-
-            }, 3000); // Splash screen duration (3 seconds)
-        });
-    </script>
+   
 </head>
 
 
 <body>
-    <div id="splashScreen">
-        <div class="">
-            <img src="images/logo.png" alt="RideBULL Logo" />
-        <!-- <p>Loading... Please wait</p> -->
-
-        <div id="loadingBarContainer">
-            <div id="loadingBar" class="animate"></div>
-        </div>
-        </div>
-    </div>
+   
     <div id="mainContent">
         <div
             style="display: flex; align-items: center; justify-content: space-between;background-color: rgb(200, 176, 176); border-bottom-color: rgba(133, 133, 133, 0.1); border-bottom-width: px; border-bottom-style: solid; margin-bottom: 5px; position: fixed; width: 100%; z-index: 9999; padding-top: 1%; border-bottom: 2px solid #facd5f; padding-left: 0.5%; padding-right: 0.5%; padding-left: 30px">
@@ -327,7 +301,7 @@
         overflow: hidden;">
                 <div class="cell auto"></div>
                 <div class="cell small-12 medium-8 large-8 infoPanel"
-                    style="font-size: 14pt; background-color: rgb(255, 255, 255); border: 2px solid #F46725;">
+                    style="font-size: 14pt; background-color: rgb(200, 176, 176); border: 2px solid #F46725;">
                     <h2 style="color: #F46725;">RideBULL</h2>
                     <p style="color: #000000;"><strong>The safest, fastest and efficient matrix smart-contract ~ P2P
                             payments direct into your wallet!</strong></p>
@@ -340,7 +314,7 @@
         overflow: hidden;">
                 <div class="cell auto"></div>
                 <div class="cell small-12 medium-8 large-8 infoPanel" id="introPanel"
-                    style="font-size: 14pt; background-color: rgb(255, 255, 255); border: 2px solid #F46725;">
+                    style="font-size: 14pt; background-color: rgb(200, 176, 176); border: 2px solid #F46725;">
                     <p>
                     <h3 style="color: #F46725;"> 12 levels; each doubling in value; earning you more $BNB each time!
                     </h3>
@@ -379,7 +353,7 @@
                     </center>
                 </div>
                 <div class="cell small-12 medium-8 large-8 infoPanel hide" id="profilePanel"
-                    style="font-size: 14pt; line-height: 16pt; background-color: rgb(255, 255, 255); border: 2px solid #e2b52a;">
+                    style="font-size: 14pt; line-height: 16pt; background-color: rgb(200, 176, 176); border: 2px solid #e2b52a;">
                     <span style="color: #000000;">Your Address: </span><span id="profileAddress" style="color: #e2b52a;"
                         class="dataItem"></span><br /><span style="color: #000000;">Referred By: </span><span
                         id="referredBy" style="color: #e2b52a;" class="dataItem"></span><br />
@@ -419,7 +393,7 @@
             <div class="grid-x grid-margin-x hide" id="matrixDiv" >
                 <div class="cell auto"></div>
                 <div class="cell small-12 medium-11 large-10 infoPanel"
-                    style="font-size: 14pt; line-height: 16pt; background-color: rgb(255, 255, 255); border: 2px solid #e2b52a;">
+                    style="font-size: 14pt; line-height: 16pt; background-color: rgb(200, 176, 176); border: 2px solid #e2b52a;">
                     <div class="grid-x grid-margin-x matrixHolder"
                         style="font-size: 14pt; line-height: 16pt; background-color: transparent; border: 2px solid transparent;">
                         <div class="cell small-12 ">
@@ -978,7 +952,7 @@
             <div class="grid-x grid-margin-x hide" id="matrixDivX6">
                 <div class="cell auto"></div>
                 <div class="cell small-12 medium-11 large-10 infoPanel"
-                    style="font-size: 14pt; line-height: 16pt; background-color: rgb(255, 255, 255); border: 2px solid #e2b52a;">
+                    style="font-size: 14pt; line-height: 16pt; background-color: rgb(200, 176, 176); border: 2px solid #e2b52a;">
                     <div class="grid-x grid-margin-x matrixHolder"
                         style="font-size: 14pt; line-height: 16pt; background-color: transparent; border: 2px solid transparent;">
                         <div class="cell small-12 ">
@@ -1716,7 +1690,7 @@
         overflow: hidden;">
                 <div class="cell large-auto"></div>
                 <div class="cell small-12 medium-12 large-6 infoPanel"
-                    style=" background-color:rgb(255, 255, 255); border: 2px solid #e2b52a;">
+                    style=" background-color:rgb(200, 176, 176); border: 2px solid #e2b52a;">
                     <center>
                         <h2 style="color: #F46725;">RideBULL Players Online</h2>
                         <script type="text/javascript"
@@ -1729,7 +1703,7 @@
                             type="button" class="primary button hide">INVITE USERS</button>
                 </div>
                 <div class="cell small-12 medium-12 large-3 infoPanel"
-                    style=" background-color:rgb(255, 255, 255); border: 2px solid #e2b52a;">
+                    style=" background-color:rgb(200, 176, 176); border: 2px solid #e2b52a;">
                     <center> <img src="images/bnb-icon.png" width="100" /><br />
                         <div id="statsPanel2" class="hide">
                             <h2 id="totalMATIC">-</h2> Total BNB Distributed to Players! <br /><br /> Equivalent to BTC:
@@ -1748,7 +1722,7 @@
             <div class="grid-x grid-margin-x faq">
                 <div class="cell auto"></div>
                 <div class="cell small-12 medium-11 large-10 infoPanel"
-                    style=" background-color:rgb(255, 255, 255); border: 2px solid #e2b52a;">
+                    style=" background-color:rgb(200, 176, 176); border: 2px solid #e2b52a;">
                     <div id="faq" class="infoPanel userPanel smaller"
                         style="text-align: left;  background-color: transparent; border:none;">
                         <h4 style="color: #F46725;">FAQs</h4>
